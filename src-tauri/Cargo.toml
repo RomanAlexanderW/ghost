@@ -46,7 +46,7 @@ futures = "0.3"
 # notify and notify-debouncer-mini moved to [target.'cfg(desktop)'.dependencies]
 
 # Text extraction
-lopdf = "0.39"
+lopdf = "0.42"
 calamine = "0.33"
 
 # HTTP client (for Ollama — rustls avoids OpenSSL cross-compilation issues on Android/iOS)
@@ -61,7 +61,7 @@ rustls = { version = "0.23", default-features = false, features = ["ring", "std"
 sqlite-vec = "0.1.7-alpha.10"
 
 # DOCX extraction
-zip = { version = "8", default-features = false, features = ["deflate"] }
+zip = { version = "9", default-features = false, features = ["deflate"] }
 
 # Error handling
 thiserror = "2"
@@ -80,7 +80,7 @@ tokenizers = "0.22"
 encoding_rs = "0.8"
 
 # MCP Protocol (Phase 1.5 — Protocol Bridge)
-rmcp = { version = "0.16", features = ["server", "client", "transport-io", "transport-child-process", "transport-streamable-http-server", "transport-streamable-http-client-reqwest"] }
+rmcp = { version = "2.1", features = ["server", "client", "transport-io", "transport-child-process", "transport-streamable-http-server", "transport-streamable-http-client-reqwest"] }
 schemars = "1"
 axum = "0.8"
 tower = "0.5"
